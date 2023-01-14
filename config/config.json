@@ -1,0 +1,24 @@
+{
+  "port":8081,
+  "debug": true,
+  "ip":"0.0.0.0",
+  "aeskey": "xuguoxu",
+  "oracle":{
+    "ip":"",
+    "port":1522,
+    "sid":"",
+    "username":"",
+    "password":""
+  },
+  "redis":{
+    "ip":"127.0.0.1",
+    "port":6379
+  },
+  "mongodb":{
+    "ip":"127.0.0.1",
+    "port":27017,
+    "db":"",
+    "username":"",
+    "password":""
+  }
+}

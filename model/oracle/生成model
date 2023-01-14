@@ -1,0 +1,1 @@
+sqlacodegen oracle://zfxfzb:zfsoft_dlkj@125.222.144.14:1522/ORCL --tables xsjbxxb,xydmb,jsxxb,jxjhcjb,xskcb,kcb,zydmb,zykcxsfpb,bjdmb,JSZYVIEW,cjcxb,cxcjbview --outfile models.py
