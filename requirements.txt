@@ -11,6 +11,6 @@ sqlacodegen
 SQLAlchemy
 jsonpickle
 pyyaml
-fastapi
+fastapi[all]
 uvicorn[standard]
 pysnooper
