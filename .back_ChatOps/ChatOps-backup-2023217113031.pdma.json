@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.3.0",
   "createdTime": "2023-2-17 09:36:09",
-  "updatedTime": "2023-2-17 11:54:56",
+  "updatedTime": "2023-2-17 10:12:34",
   "dbConns": [],
   "profile": {
     "default": {
@@ -1317,7 +1317,16 @@
           "id": "D9FAD35E-DE8F-4311-96A0-B0348AEAEF63"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "E1A74362-6CE0-42BB-9E33-8D2DDC1B9DFF",
+          "refEntity": "92CEF7A2-C1C5-4A89-809C-F57F92122113",
+          "refField": "E4FE70AD-3A44-4633-9776-23AB00E37F4E",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -2295,7 +2304,7 @@
       "fields": [
         {
           "defKey": "ID",
-          "defName": "",
+          "defName": "租户号",
           "comment": "",
           "type": "",
           "len": 32,
@@ -2888,7 +2897,24 @@
           "id": "2AED2B39-0189-445F-BE3A-FC8BE0847C38"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "AADA5BF3-5BD5-417B-8053-CACD1C5260E4",
+          "refEntity": "92CEF7A2-C1C5-4A89-809C-F57F92122113",
+          "refField": "5DA318E2-50A2-4736-AA6B-54EAD3D4953E",
+          "myRows": "n",
+          "refRows": "n",
+          "innerType": ""
+        },
+        {
+          "myField": "913C5C7B-0A47-467D-B7A0-DA8C49F93690",
+          "refEntity": "1D3E8CE2-DC07-487B-847A-641CBA046304",
+          "refField": "193BA3A2-D41B-417D-B7AD-1B872A366994",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {

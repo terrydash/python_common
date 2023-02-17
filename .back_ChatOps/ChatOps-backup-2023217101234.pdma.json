@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.3.0",
   "createdTime": "2023-2-17 09:36:09",
-  "updatedTime": "2023-2-17 11:54:56",
+  "updatedTime": "2023-2-17 10:12:16",
   "dbConns": [],
   "profile": {
     "default": {
@@ -1317,7 +1317,16 @@
           "id": "D9FAD35E-DE8F-4311-96A0-B0348AEAEF63"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "E1A74362-6CE0-42BB-9E33-8D2DDC1B9DFF",
+          "refEntity": "92CEF7A2-C1C5-4A89-809C-F57F92122113",
+          "refField": "E4FE70AD-3A44-4633-9776-23AB00E37F4E",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -2295,7 +2304,7 @@
       "fields": [
         {
           "defKey": "ID",
-          "defName": "",
+          "defName": "租户号",
           "comment": "",
           "type": "",
           "len": 32,
@@ -2888,7 +2897,16 @@
           "id": "2AED2B39-0189-445F-BE3A-FC8BE0847C38"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "AADA5BF3-5BD5-417B-8053-CACD1C5260E4",
+          "refEntity": "92CEF7A2-C1C5-4A89-809C-F57F92122113",
+          "refField": "5DA318E2-50A2-4736-AA6B-54EAD3D4953E",
+          "myRows": "n",
+          "refRows": "n",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -3427,50 +3445,6 @@
             "fillColor": "#ACDAFC"
           },
           {
-            "id": "8c81d86c-553d-4142-8371-2cd143617a35",
-            "shape": "erdRelation",
-            "source": {
-              "cell": "9d9a88e8-8520-467d-b876-e5ee305fe8a6",
-              "port": "AADA5BF3-5BD5-417B-8053-CACD1C5260E4%in"
-            },
-            "target": {
-              "cell": "ab729ac3-b9eb-4721-a450-e3c1f5e4e8fd",
-              "port": "5DA318E2-50A2-4736-AA6B-54EAD3D4953E%in"
-            },
-            "relation": "n:n",
-            "fillColor": "#ACDAFC",
-            "router": {
-              "name": "manhattan"
-            }
-          },
-          {
-            "id": "ab729ac3-b9eb-4721-a450-e3c1f5e4e8fd",
-            "shape": "table",
-            "position": {
-              "x": 990,
-              "y": 560
-            },
-            "count": 0,
-            "originKey": "92CEF7A2-C1C5-4A89-809C-F57F92122113"
-          },
-          {
-            "id": "49bed9bb-9e8c-4013-8231-360ee48b951e",
-            "shape": "erdRelation",
-            "source": {
-              "cell": "5c2ece09-40fa-4f34-8208-280167b704bc",
-              "port": "193BA3A2-D41B-417D-B7AD-1B872A366994%in"
-            },
-            "target": {
-              "cell": "9d9a88e8-8520-467d-b876-e5ee305fe8a6",
-              "port": "913C5C7B-0A47-467D-B7A0-DA8C49F93690%in"
-            },
-            "relation": "1:n",
-            "fillColor": "#ACDAFC",
-            "router": {
-              "name": "manhattan"
-            }
-          },
-          {
             "id": "5c2ece09-40fa-4f34-8208-280167b704bc",
             "shape": "table",
             "position": {
@@ -3491,6 +3465,23 @@
             "originKey": "3B9137B4-FF00-4F99-9A89-03B660EDFF5A"
           },
           {
+            "id": "8c81d86c-553d-4142-8371-2cd143617a35",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "9d9a88e8-8520-467d-b876-e5ee305fe8a6",
+              "port": "AADA5BF3-5BD5-417B-8053-CACD1C5260E4%in"
+            },
+            "target": {
+              "cell": "ab729ac3-b9eb-4721-a450-e3c1f5e4e8fd",
+              "port": "5DA318E2-50A2-4736-AA6B-54EAD3D4953E%in"
+            },
+            "relation": "n:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
             "id": "9d9a88e8-8520-467d-b876-e5ee305fe8a6",
             "shape": "table",
             "position": {
@@ -3499,6 +3490,16 @@
             },
             "count": 0,
             "originKey": "AFE4C4F3-7D5A-4D4A-B87A-E47A8FD2F0B6"
+          },
+          {
+            "id": "ab729ac3-b9eb-4721-a450-e3c1f5e4e8fd",
+            "shape": "table",
+            "position": {
+              "x": 990,
+              "y": 560
+            },
+            "count": 0,
+            "originKey": "92CEF7A2-C1C5-4A89-809C-F57F92122113"
           }
         ]
       },
