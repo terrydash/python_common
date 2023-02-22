@@ -3,8 +3,8 @@
   "describe": "ChatOps",
   "avatar": "",
   "version": "4.3.0",
-  "createdTime": "2023-1-13 13:42:57",
-  "updatedTime": "2023-2-16 18:11:07",
+  "createdTime": "2023-2-17 09:36:09",
+  "updatedTime": "2023-2-17 11:54:56",
   "dbConns": [],
   "profile": {
     "default": {
@@ -1317,16 +1317,7 @@
           "id": "D9FAD35E-DE8F-4311-96A0-B0348AEAEF63"
         }
       ],
-      "correlations": [
-        {
-          "myField": "E1A74362-6CE0-42BB-9E33-8D2DDC1B9DFF",
-          "refEntity": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A",
-          "refField": "20D7CE17-57E2-4182-9000-197D0177EE44",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -1518,268 +1509,6 @@
           "extProps": {},
           "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
           "id": "AB0F14E9-FCAC-45E4-829C-11BE37197EC3"
-        }
-      ],
-      "correlations": [],
-      "indexes": []
-    },
-    {
-      "id": "62C095A6-ADB8-4F0A-9004-32C5388F1D57",
-      "env": {
-        "base": {
-          "nameSpace": "",
-          "codeRoot": ""
-        }
-      },
-      "defKey": "ChatOps_Step",
-      "defName": "",
-      "comment": "",
-      "properties": {
-        "partitioned by": "(date string)",
-        "row format delimited": "",
-        "fields terminated by ','": "",
-        "collection items terminated by '-'": "",
-        "map keys terminated by ':'": "",
-        "store as textfile;": ""
-      },
-      "nameTemplate": "{defKey}[{defName}]",
-      "notes": {},
-      "headers": [
-        {
-          "refKey": "hideInGraph",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defKey",
-          "hideInGraph": false
-        },
-        {
-          "refKey": "defName",
-          "hideInGraph": false
-        },
-        {
-          "refKey": "primaryKey",
-          "hideInGraph": false
-        },
-        {
-          "refKey": "notNull",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "autoIncrement",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "domain",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "type",
-          "hideInGraph": false
-        },
-        {
-          "refKey": "len",
-          "hideInGraph": false
-        },
-        {
-          "refKey": "scale",
-          "hideInGraph": false
-        },
-        {
-          "refKey": "comment",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "refDict",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defaultValue",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "isStandard",
-          "hideInGraph": false
-        },
-        {
-          "refKey": "uiHint",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "extProps",
-          "hideInGraph": true
-        }
-      ],
-      "fields": [
-        {
-          "defKey": "ID",
-          "defName": "",
-          "comment": "",
-          "type": "",
-          "len": 32,
-          "scale": "",
-          "primaryKey": true,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "domain": "16120F75-6AA7-4483-868D-F07F511BB081",
-          "refDict": "",
-          "uiHint": "",
-          "id": "9BCC5757-9D13-40CD-A701-35093DBD943C"
-        },
-        {
-          "defKey": "STEP_DESC",
-          "defName": "",
-          "comment": "",
-          "type": "VARCHAR2",
-          "len": 100,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "",
-          "id": "7D14B08A-3B6B-4D0D-922F-B326F8C2B8D5"
-        },
-        {
-          "defKey": "STEP_NAME",
-          "defName": "",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "54611CCC-CA4B-42E1-9F32-4944C85B85A6",
-          "id": "C89E5C78-78A8-423C-B9B8-B01A1AAD701C"
-        },
-        {
-          "defKey": "STEP_TYPE",
-          "defName": "",
-          "comment": "1.user input 2.call api 3.redirect",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
-          "id": "E32F823A-09E9-4592-8FD9-A0A6C5575C28"
-        },
-        {
-          "defKey": "API_ID",
-          "defName": "",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "16120F75-6AA7-4483-868D-F07F511BB081",
-          "id": "D2A3D400-1D36-448B-8F8F-8D8291BB3862"
-        },
-        {
-          "defKey": "API_PATH",
-          "defName": "",
-          "comment": "{\"CSI_ID\":\"<$Workflow.CSI_ID$>\"}",
-          "type": "VARCHAR2",
-          "len": 100,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "",
-          "id": "B9D1A88A-9D98-4E79-8D52-F4BC61B6E3AA"
-        },
-        {
-          "defKey": "API_PARAM",
-          "defName": "",
-          "comment": "",
-          "type": "VARCHAR2",
-          "len": 100,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "",
-          "id": "9EE480DB-15D2-4DFA-BF56-9C664D7E6453"
-        },
-        {
-          "defKey": "API_HEADER",
-          "defName": "",
-          "comment": "",
-          "type": "VARCHAR2",
-          "len": 100,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "",
-          "id": "4B0E491A-E66E-4335-B886-8AEE5BB6D9DF"
-        },
-        {
-          "defKey": "API_BODY",
-          "defName": "",
-          "comment": "{\"CSI_ID\":\"<$User_Input.CSI_ID$>\",\"VERIFY_ID\":\"<$User_Input.VERIFY_ID$>\"} # <$user_Input$> meaning get the user input",
-          "type": "VARCHAR2",
-          "len": 100,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "",
-          "id": "8B963B55-FEC4-49F7-BDAF-893870469F45"
-        },
-        {
-          "defKey": "RES_TYPE",
-          "defName": "",
-          "comment": "JSON",
-          "type": "VARCHAR2",
-          "len": 10,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "",
-          "id": "B7068B26-B8EE-418C-86EC-34EB26F2C5DE"
         }
       ],
       "correlations": [],
@@ -2153,16 +1882,7 @@
           "id": "915E611D-D8BC-41C4-B181-B174D82B2943"
         }
       ],
-      "correlations": [
-        {
-          "myField": "198C44C8-C2CA-4B95-8A2F-E12867883C3F",
-          "refEntity": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A",
-          "refField": "9D8DD9C8-4BE8-450B-BB6B-E7A843B5CD29",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -2894,6 +2614,92 @@
           "id": "1E71463C-A720-42BA-B5EB-BC1254A54907"
         },
         {
+          "defKey": "STEP_ID",
+          "defName": "",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "16120F75-6AA7-4483-868D-F07F511BB081",
+          "id": "827B263F-B3B2-4CF5-8CD4-F8FEE61E15B1"
+        },
+        {
+          "defKey": "STEP_NAME",
+          "defName": "",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "domain": "54611CCC-CA4B-42E1-9F32-4944C85B85A6",
+          "refDict": "",
+          "extProps": {},
+          "notes": {},
+          "id": "95B9EE20-0402-428A-83C3-D20AF4E0E584"
+        },
+        {
+          "defKey": "STEP_DESC",
+          "defName": "",
+          "comment": "",
+          "type": "VARCHAR2",
+          "len": 100,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "notes": {},
+          "id": "E3460589-F5F3-40A3-94E6-EF8D071CA3A6"
+        },
+        {
+          "defKey": "STEP_TYPE",
+          "defName": "",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
+          "id": "5FBF6407-5C9C-4F24-82B4-30B40E70B6A8"
+        },
+        {
+          "defKey": "RES_TYPE",
+          "defName": "",
+          "comment": "JSON",
+          "type": "VARCHAR2",
+          "len": 10,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "notes": {},
+          "id": "7CC95C00-AC89-4394-AD5D-5404E5E70422"
+        },
+        {
           "defKey": "WORKFLOW_ID",
           "defName": "",
           "comment": "",
@@ -3080,40 +2886,6 @@
           "extProps": {},
           "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
           "id": "2AED2B39-0189-445F-BE3A-FC8BE0847C38"
-        },
-        {
-          "defKey": "INPUT_MSG",
-          "defName": "",
-          "comment": "If this predicat Right?",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "9092C4E0-1A54-4859-ABBB-5B62DBC27573",
-          "id": "C6275A95-7C43-43C3-A31C-54942750695D"
-        },
-        {
-          "defKey": "STEP_TYPE",
-          "defName": "",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "extProps": {},
-          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
-          "id": "5FBF6407-5C9C-4F24-82B4-30B40E70B6A8"
         }
       ],
       "correlations": [],
@@ -3644,68 +3416,6 @@
             "id": "38f05f33-6f69-4bb2-bf20-a1d295fc6a14",
             "shape": "erdRelation",
             "source": {
-              "cell": "4ab0ebf5-26e9-4578-b566-5cc6dc986839",
-              "port": "913C5C7B-0A47-467D-B7A0-DA8C49F93690%in"
-            },
-            "target": {
-              "cell": "5c2ece09-40fa-4f34-8208-280167b704bc",
-              "port": "193BA3A2-D41B-417D-B7AD-1B872A366994%in"
-            },
-            "relation": "1:n",
-            "fillColor": "#ACDAFC"
-          },
-          {
-            "id": "ee57acd5-5c6a-4c72-ae4c-f7a4c9abacfb",
-            "shape": "erdRelation",
-            "source": {
-              "cell": "4ab0ebf5-26e9-4578-b566-5cc6dc986839",
-              "port": "827B263F-B3B2-4CF5-8CD4-F8FEE61E15B1%in"
-            },
-            "target": {
-              "cell": "786a06c9-7af3-46de-8e3d-f79d79c8cd1a",
-              "port": "9BCC5757-9D13-40CD-A701-35093DBD943C%in"
-            },
-            "relation": "1:1",
-            "fillColor": "#ACDAFC"
-          },
-          {
-            "id": "43e70c60-f263-4459-9f3a-e8b29c1da4ff",
-            "shape": "erdRelation",
-            "source": {
-              "cell": "786a06c9-7af3-46de-8e3d-f79d79c8cd1a",
-              "port": "D2A3D400-1D36-448B-8F8F-8D8291BB3862%in"
-            },
-            "target": {
-              "cell": "ab729ac3-b9eb-4721-a450-e3c1f5e4e8fd",
-              "port": "5DA318E2-50A2-4736-AA6B-54EAD3D4953E%in"
-            },
-            "relation": "n:n",
-            "fillColor": "#ACDAFC"
-          },
-          {
-            "id": "786a06c9-7af3-46de-8e3d-f79d79c8cd1a",
-            "shape": "table",
-            "position": {
-              "x": 650,
-              "y": 110
-            },
-            "count": 0,
-            "originKey": "62C095A6-ADB8-4F0A-9004-32C5388F1D57"
-          },
-          {
-            "id": "5c2ece09-40fa-4f34-8208-280167b704bc",
-            "shape": "table",
-            "position": {
-              "x": 0,
-              "y": 180
-            },
-            "count": 0,
-            "originKey": "1D3E8CE2-DC07-487B-847A-641CBA046304"
-          },
-          {
-            "id": "38f05f33-6f69-4bb2-bf20-a1d295fc6a14",
-            "shape": "erdRelation",
-            "source": {
               "cell": "ab729ac3-b9eb-4721-a450-e3c1f5e4e8fd",
               "port": "E4FE70AD-3A44-4633-9776-23AB00E37F4E%in"
             },
@@ -3714,20 +3424,24 @@
               "port": "E1A74362-6CE0-42BB-9E33-8D2DDC1B9DFF%in"
             },
             "relation": "1:n",
+            "fillColor": "#ACDAFC"
+          },
+          {
+            "id": "8c81d86c-553d-4142-8371-2cd143617a35",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "9d9a88e8-8520-467d-b876-e5ee305fe8a6",
+              "port": "AADA5BF3-5BD5-417B-8053-CACD1C5260E4%in"
+            },
+            "target": {
+              "cell": "ab729ac3-b9eb-4721-a450-e3c1f5e4e8fd",
+              "port": "5DA318E2-50A2-4736-AA6B-54EAD3D4953E%in"
+            },
+            "relation": "n:n",
             "fillColor": "#ACDAFC",
             "router": {
               "name": "manhattan"
             }
-          },
-          {
-            "id": "04e98d63-aa73-4c4b-ac79-ae031352cbcc",
-            "shape": "table",
-            "position": {
-              "x": 10,
-              "y": 510
-            },
-            "count": 0,
-            "originKey": "3B9137B4-FF00-4F99-9A89-03B660EDFF5A"
           },
           {
             "id": "ab729ac3-b9eb-4721-a450-e3c1f5e4e8fd",
@@ -3740,11 +3454,48 @@
             "originKey": "92CEF7A2-C1C5-4A89-809C-F57F92122113"
           },
           {
-            "id": "4ab0ebf5-26e9-4578-b566-5cc6dc986839",
+            "id": "49bed9bb-9e8c-4013-8231-360ee48b951e",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "5c2ece09-40fa-4f34-8208-280167b704bc",
+              "port": "193BA3A2-D41B-417D-B7AD-1B872A366994%in"
+            },
+            "target": {
+              "cell": "9d9a88e8-8520-467d-b876-e5ee305fe8a6",
+              "port": "913C5C7B-0A47-467D-B7A0-DA8C49F93690%in"
+            },
+            "relation": "1:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "5c2ece09-40fa-4f34-8208-280167b704bc",
             "shape": "table",
             "position": {
-              "x": 490,
-              "y": 190
+              "x": 0,
+              "y": 180
+            },
+            "count": 0,
+            "originKey": "1D3E8CE2-DC07-487B-847A-641CBA046304"
+          },
+          {
+            "id": "04e98d63-aa73-4c4b-ac79-ae031352cbcc",
+            "shape": "table",
+            "position": {
+              "x": 10,
+              "y": 510
+            },
+            "count": 0,
+            "originKey": "3B9137B4-FF00-4F99-9A89-03B660EDFF5A"
+          },
+          {
+            "id": "9d9a88e8-8520-467d-b876-e5ee305fe8a6",
+            "shape": "table",
+            "position": {
+              "x": 650,
+              "y": 110
             },
             "count": 0,
             "originKey": "AFE4C4F3-7D5A-4D4A-B87A-E47A8FD2F0B6"
