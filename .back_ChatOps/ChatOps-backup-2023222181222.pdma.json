@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.3.0",
   "createdTime": "2023-2-22 16:59:26",
-  "updatedTime": "2023-2-22 17:03:03",
+  "updatedTime": "2023-2-22 18:10:52",
   "dbConns": [],
   "profile": {
     "default": {
@@ -756,7 +756,7 @@
           "defName": "ID",
           "comment": "",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": true,
           "notNull": true,
@@ -818,18 +818,26 @@
           "extProps": {},
           "domain": "54611CCC-CA4B-42E1-9F32-4944C85B85A6",
           "id": "24ADD74F-43F6-4371-BDDC-3D5A8F0FE490"
-        }
-      ],
-      "correlations": [
+        },
         {
-          "myField": "C3857EE9-F55A-4DFF-B243-9B82C971ACEF",
-          "refEntity": "849ED846-4E04-4FBC-AE27-8175110A61FB",
-          "refField": "B51FBB4E-B41F-4591-ADC9-FDF64718DCA7",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "USER_SSO_TOKEN",
+          "defName": "",
+          "comment": "",
+          "type": "VARCHAR2",
+          "len": 90,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "4096E169-8D0C-4D96-9AEC-7A920B2A5FAE"
         }
       ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -972,16 +980,7 @@
           "id": "9D03EE33-E42B-43FF-97D3-4DE7B9399B9D"
         }
       ],
-      "correlations": [
-        {
-          "myField": "B51FBB4E-B41F-4591-ADC9-FDF64718DCA7",
-          "refEntity": "DDAC6617-E642-43EF-B916-2F96D58AD5BE",
-          "refField": "0E527AA0-FB24-471E-8D45-8060ACF17708",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -1124,24 +1123,7 @@
           "id": "DA336D7C-F564-4C1F-9230-9BADF4333D09"
         }
       ],
-      "correlations": [
-        {
-          "myField": "737CBEE9-4FE2-4863-B9C4-08099249C5CA",
-          "refEntity": "9C8BA065-B778-4767-88B5-9B0EFDF69B02",
-          "refField": "E8D99ACF-97D5-4D62-92B5-875C1F9406CD",
-          "myRows": "1",
-          "refRows": "1",
-          "innerType": ""
-        },
-        {
-          "myField": "737CBEE9-4FE2-4863-B9C4-08099249C5CA",
-          "refEntity": "AE69698E-FC97-4623-B49A-1E42AE12B2E8",
-          "refField": "9915D220-2489-42D1-9E8A-4C90E516D96B",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -1284,16 +1266,7 @@
           "id": "0E527AA0-FB24-471E-8D45-8060ACF17708"
         }
       ],
-      "correlations": [
-        {
-          "myField": "8B1AB2AF-AB48-4CB3-98C8-005934113CDC",
-          "refEntity": "762E2CA2-1B10-46E7-85FB-F8A7D6512024",
-          "refField": "737CBEE9-4FE2-4863-B9C4-08099249C5CA",
-          "myRows": "n",
-          "refRows": "n",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -1423,7 +1396,7 @@
           "defName": "",
           "comment": "",
           "type": "VARCHAR2",
-          "len": 10,
+          "len": 30,
           "scale": "",
           "primaryKey": false,
           "notNull": true,
@@ -1490,7 +1463,7 @@
           "defKey": "USER_ID",
           "defName": "",
           "comment": "",
-          "type": "",
+          "type": "INT",
           "len": "",
           "scale": "",
           "primaryKey": false,
@@ -1500,7 +1473,7 @@
           "hideInGraph": false,
           "refDict": "",
           "extProps": {},
-          "domain": "16120F75-6AA7-4483-868D-F07F511BB081",
+          "domain": "",
           "id": "D9FAD35E-DE8F-4311-96A0-B0348AEAEF63"
         }
       ],
@@ -1698,16 +1671,7 @@
           "id": "AB0F14E9-FCAC-45E4-829C-11BE37197EC3"
         }
       ],
-      "correlations": [
-        {
-          "myField": "193BA3A2-D41B-417D-B7AD-1B872A366994",
-          "refEntity": "AE69698E-FC97-4623-B49A-1E42AE12B2E8",
-          "refField": "B29178FE-8ECC-4D77-8C2A-C8BD4670E8E7",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -1960,7 +1924,7 @@
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
@@ -1974,7 +1938,7 @@
           "defName": "",
           "comment": "{\"CSI_ID\":\"<$Workflow.CSI_ID$>\"}",
           "type": "VARCHAR2",
-          "len": 100,
+          "len": 200,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -1991,7 +1955,7 @@
           "defName": "",
           "comment": "",
           "type": "VARCHAR2",
-          "len": 100,
+          "len": 200,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -2008,7 +1972,7 @@
           "defName": "",
           "comment": "",
           "type": "VARCHAR2",
-          "len": 100,
+          "len": 200,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -2025,7 +1989,7 @@
           "defName": "",
           "comment": "{\"CSI_ID\":\"<$User_Input.CSI_ID$>\",\"VERIFY_ID\":\"<$User_Input.VERIFY_ID$>\"} # <$user_Input$> meaning get the user input",
           "type": "VARCHAR2",
-          "len": 100,
+          "len": 200,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -2184,7 +2148,7 @@
           "defKey": "APP_ID",
           "defName": "",
           "comment": "ChatOps_Application.ID",
-          "type": "",
+          "type": "INT",
           "len": "",
           "scale": "",
           "primaryKey": false,
@@ -2194,7 +2158,7 @@
           "hideInGraph": false,
           "refDict": "",
           "extProps": {},
-          "domain": "16120F75-6AA7-4483-868D-F07F511BB081",
+          "domain": "",
           "id": "E4FE70AD-3A44-4633-9776-23AB00E37F4E"
         },
         {
@@ -2217,7 +2181,7 @@
         {
           "defKey": "API_PATH",
           "defName": "",
-          "comment": "变量<$NAME$>",
+          "comment": "variable <$NAME$>",
           "type": "VARCHAR2",
           "len": 200,
           "scale": "",
@@ -2522,7 +2486,7 @@
           "defName": "ID",
           "comment": "",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": true,
           "notNull": true,
@@ -2540,7 +2504,7 @@
           "comment": "",
           "domain": "",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": false,
           "notNull": true,
@@ -2573,7 +2537,7 @@
           "defName": "",
           "comment": "ChatOps_Channel.ID",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": false,
           "notNull": true,
@@ -2588,7 +2552,7 @@
         {
           "defKey": "CHANNEL_CONFIG",
           "defName": "",
-          "comment": "{}",
+          "comment": "",
           "type": "VARCHAR2",
           "len": 200,
           "scale": "",
@@ -2746,16 +2710,7 @@
           "id": "2B7BD5B6-A463-4D3F-AE2A-F88A250FA503"
         }
       ],
-      "correlations": [
-        {
-          "myField": "98B24DCF-FE4F-468B-A21D-4EF04C3D9FAD",
-          "refEntity": "9C8BA065-B778-4767-88B5-9B0EFDF69B02",
-          "refField": "5B9D8F0B-4D93-4742-AF49-D1CA2F3EB046",
-          "myRows": "1",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -3776,21 +3731,11 @@
               "cell": "31a3b308-4932-451e-9679-dcf3f10d6380",
               "port": "193BA3A2-D41B-417D-B7AD-1B872A366994%in"
             },
-            "relation": "1:n",
+            "relation": "n:n",
             "fillColor": "#ACDAFC",
             "router": {
               "name": "manhattan"
             }
-          },
-          {
-            "id": "38c8650a-6a77-4189-a38a-dc5c10c9e813",
-            "shape": "table",
-            "position": {
-              "x": 410,
-              "y": 90
-            },
-            "count": 0,
-            "originKey": "AE69698E-FC97-4623-B49A-1E42AE12B2E8"
           },
           {
             "id": "31a3b308-4932-451e-9679-dcf3f10d6380",
@@ -3801,6 +3746,16 @@
             },
             "count": 0,
             "originKey": "1D3E8CE2-DC07-487B-847A-641CBA046304"
+          },
+          {
+            "id": "38c8650a-6a77-4189-a38a-dc5c10c9e813",
+            "shape": "table",
+            "position": {
+              "x": 410,
+              "y": 90
+            },
+            "count": 0,
+            "originKey": "AE69698E-FC97-4623-B49A-1E42AE12B2E8"
           }
         ]
       },

@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.3.0",
   "createdTime": "2023-2-22 16:59:26",
-  "updatedTime": "2023-2-22 17:01:22",
+  "updatedTime": "2023-2-22 18:12:22",
   "dbConns": [],
   "profile": {
     "default": {
@@ -756,7 +756,7 @@
           "defName": "ID",
           "comment": "",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": true,
           "notNull": true,
@@ -818,18 +818,26 @@
           "extProps": {},
           "domain": "54611CCC-CA4B-42E1-9F32-4944C85B85A6",
           "id": "24ADD74F-43F6-4371-BDDC-3D5A8F0FE490"
-        }
-      ],
-      "correlations": [
+        },
         {
-          "myField": "51019CF0-68EF-42E9-B55F-64F7C6384F7B",
-          "refEntity": "3B9137B4-FF00-4F99-9A89-03B660EDFF5A",
-          "refField": "D9FAD35E-DE8F-4311-96A0-B0348AEAEF63",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "USER_SSO_TOKEN",
+          "defName": "",
+          "comment": "",
+          "type": "VARCHAR2",
+          "len": 90,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "4096E169-8D0C-4D96-9AEC-7A920B2A5FAE"
         }
       ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -1388,7 +1396,7 @@
           "defName": "",
           "comment": "",
           "type": "VARCHAR2",
-          "len": 10,
+          "len": 30,
           "scale": "",
           "primaryKey": false,
           "notNull": true,
@@ -1455,7 +1463,7 @@
           "defKey": "USER_ID",
           "defName": "",
           "comment": "",
-          "type": "",
+          "type": "INT",
           "len": "",
           "scale": "",
           "primaryKey": false,
@@ -1465,20 +1473,11 @@
           "hideInGraph": false,
           "refDict": "",
           "extProps": {},
-          "domain": "16120F75-6AA7-4483-868D-F07F511BB081",
+          "domain": "",
           "id": "D9FAD35E-DE8F-4311-96A0-B0348AEAEF63"
         }
       ],
-      "correlations": [
-        {
-          "myField": "E1A74362-6CE0-42BB-9E33-8D2DDC1B9DFF",
-          "refEntity": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A",
-          "refField": "20D7CE17-57E2-4182-9000-197D0177EE44",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -1925,7 +1924,7 @@
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
@@ -1939,7 +1938,7 @@
           "defName": "",
           "comment": "{\"CSI_ID\":\"<$Workflow.CSI_ID$>\"}",
           "type": "VARCHAR2",
-          "len": 100,
+          "len": 200,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -1956,7 +1955,7 @@
           "defName": "",
           "comment": "",
           "type": "VARCHAR2",
-          "len": 100,
+          "len": 200,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -1973,7 +1972,7 @@
           "defName": "",
           "comment": "",
           "type": "VARCHAR2",
-          "len": 100,
+          "len": 200,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -1990,7 +1989,7 @@
           "defName": "",
           "comment": "{\"CSI_ID\":\"<$User_Input.CSI_ID$>\",\"VERIFY_ID\":\"<$User_Input.VERIFY_ID$>\"} # <$user_Input$> meaning get the user input",
           "type": "VARCHAR2",
-          "len": 100,
+          "len": 200,
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -2149,7 +2148,7 @@
           "defKey": "APP_ID",
           "defName": "",
           "comment": "ChatOps_Application.ID",
-          "type": "",
+          "type": "INT",
           "len": "",
           "scale": "",
           "primaryKey": false,
@@ -2159,7 +2158,7 @@
           "hideInGraph": false,
           "refDict": "",
           "extProps": {},
-          "domain": "16120F75-6AA7-4483-868D-F07F511BB081",
+          "domain": "",
           "id": "E4FE70AD-3A44-4633-9776-23AB00E37F4E"
         },
         {
@@ -2182,7 +2181,7 @@
         {
           "defKey": "API_PATH",
           "defName": "",
-          "comment": "变量<$NAME$>",
+          "comment": "variable <$NAME$>",
           "type": "VARCHAR2",
           "len": 200,
           "scale": "",
@@ -2391,16 +2390,7 @@
           "id": "915E611D-D8BC-41C4-B181-B174D82B2943"
         }
       ],
-      "correlations": [
-        {
-          "myField": "198C44C8-C2CA-4B95-8A2F-E12867883C3F",
-          "refEntity": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A",
-          "refField": "9D8DD9C8-4BE8-450B-BB6B-E7A843B5CD29",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -2496,7 +2486,7 @@
           "defName": "ID",
           "comment": "",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": true,
           "notNull": true,
@@ -2514,7 +2504,7 @@
           "comment": "",
           "domain": "",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": false,
           "notNull": true,
@@ -2547,7 +2537,7 @@
           "defName": "",
           "comment": "ChatOps_Channel.ID",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": false,
           "notNull": true,
@@ -2562,7 +2552,7 @@
         {
           "defKey": "CHANNEL_CONFIG",
           "defName": "",
-          "comment": "{}",
+          "comment": "",
           "type": "VARCHAR2",
           "len": 200,
           "scale": "",
@@ -2959,7 +2949,7 @@
           "defName": "",
           "comment": "",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": true,
           "notNull": true,
@@ -2976,7 +2966,7 @@
           "defName": "",
           "comment": "",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": false,
           "notNull": true,
@@ -2993,7 +2983,7 @@
           "defName": "",
           "comment": "",
           "type": "INT",
-          "len": 32,
+          "len": "",
           "scale": "",
           "primaryKey": false,
           "notNull": true,
@@ -3575,16 +3565,6 @@
       "canvasData": {
         "cells": [
           {
-            "id": "c17a0364-43f1-46ba-884c-a1953a79d43b",
-            "shape": "table",
-            "position": {
-              "x": 506,
-              "y": 243
-            },
-            "count": 0,
-            "originKey": "2568EC65-A383-46F8-BA0D-D6BCB82635B1"
-          },
-          {
             "id": "013e1944-6203-44e3-a22a-1391b21f9e0a",
             "shape": "erdRelation",
             "source": {
@@ -3611,16 +3591,6 @@
             },
             "relation": "1:1",
             "fillColor": "#ACDAFC"
-          },
-          {
-            "id": "e74ed6d2-6a22-49b2-93a4-54f2fa3678a9",
-            "shape": "table",
-            "position": {
-              "x": 41,
-              "y": 243
-            },
-            "count": 0,
-            "originKey": "9C8BA065-B778-4767-88B5-9B0EFDF69B02"
           },
           {
             "id": "b48d0b64-1a24-42c5-b9af-9c3b6e3072e9",
@@ -3694,16 +3664,6 @@
             "originKey": "849ED846-4E04-4FBC-AE27-8175110A61FB"
           },
           {
-            "id": "4f575631-55b4-4d0c-bcc5-03486b7a9d84",
-            "shape": "table",
-            "position": {
-              "x": 8.5,
-              "y": 61.5
-            },
-            "count": 0,
-            "originKey": "762E2CA2-1B10-46E7-85FB-F8A7D6512024"
-          },
-          {
             "id": "79e46ecc-56dd-4627-9fec-df55ce2151c5",
             "shape": "table",
             "position": {
@@ -3712,6 +3672,90 @@
             },
             "count": 0,
             "originKey": "DDAC6617-E642-43EF-B916-2F96D58AD5BE"
+          },
+          {
+            "id": "c17a0364-43f1-46ba-884c-a1953a79d43b",
+            "shape": "table",
+            "position": {
+              "x": 331.5,
+              "y": 433
+            },
+            "count": 0,
+            "originKey": "2568EC65-A383-46F8-BA0D-D6BCB82635B1"
+          },
+          {
+            "id": "e74ed6d2-6a22-49b2-93a4-54f2fa3678a9",
+            "shape": "table",
+            "position": {
+              "x": 41,
+              "y": 243
+            },
+            "count": 0,
+            "originKey": "9C8BA065-B778-4767-88B5-9B0EFDF69B02"
+          },
+          {
+            "id": "053ee5a4-b36f-4b17-b420-0ab1620374f0",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "38c8650a-6a77-4189-a38a-dc5c10c9e813",
+              "port": "9915D220-2489-42D1-9E8A-4C90E516D96B%in"
+            },
+            "target": {
+              "cell": "4f575631-55b4-4d0c-bcc5-03486b7a9d84",
+              "port": "737CBEE9-4FE2-4863-B9C4-08099249C5CA%in"
+            },
+            "relation": "1:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "4f575631-55b4-4d0c-bcc5-03486b7a9d84",
+            "shape": "table",
+            "position": {
+              "x": 8.5,
+              "y": 13
+            },
+            "count": 0,
+            "originKey": "762E2CA2-1B10-46E7-85FB-F8A7D6512024"
+          },
+          {
+            "id": "633ac7a6-7a66-47f7-a19f-0b9d9c78a9e2",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "38c8650a-6a77-4189-a38a-dc5c10c9e813",
+              "port": "B29178FE-8ECC-4D77-8C2A-C8BD4670E8E7%out"
+            },
+            "target": {
+              "cell": "31a3b308-4932-451e-9679-dcf3f10d6380",
+              "port": "193BA3A2-D41B-417D-B7AD-1B872A366994%in"
+            },
+            "relation": "n:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "31a3b308-4932-451e-9679-dcf3f10d6380",
+            "shape": "table",
+            "position": {
+              "x": 788.5,
+              "y": 233
+            },
+            "count": 0,
+            "originKey": "1D3E8CE2-DC07-487B-847A-641CBA046304"
+          },
+          {
+            "id": "38c8650a-6a77-4189-a38a-dc5c10c9e813",
+            "shape": "table",
+            "position": {
+              "x": 410,
+              "y": 90
+            },
+            "count": 0,
+            "originKey": "AE69698E-FC97-4623-B49A-1E42AE12B2E8"
           }
         ]
       },
