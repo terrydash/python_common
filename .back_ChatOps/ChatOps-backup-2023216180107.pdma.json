@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.3.0",
   "createdTime": "2023-1-13 13:42:57",
-  "updatedTime": "2023-2-16 18:11:07",
+  "updatedTime": "2023-2-16 16:17:36",
   "dbConns": [],
   "profile": {
     "default": {
@@ -1320,8 +1320,8 @@
       "correlations": [
         {
           "myField": "E1A74362-6CE0-42BB-9E33-8D2DDC1B9DFF",
-          "refEntity": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A",
-          "refField": "20D7CE17-57E2-4182-9000-197D0177EE44",
+          "refEntity": "92CEF7A2-C1C5-4A89-809C-F57F92122113",
+          "refField": "E4FE70AD-3A44-4633-9776-23AB00E37F4E",
           "myRows": "n",
           "refRows": "1",
           "innerType": ""
@@ -1520,7 +1520,16 @@
           "id": "AB0F14E9-FCAC-45E4-829C-11BE37197EC3"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "193BA3A2-D41B-417D-B7AD-1B872A366994",
+          "refEntity": "AFE4C4F3-7D5A-4D4A-B87A-E47A8FD2F0B6",
+          "refField": "913C5C7B-0A47-467D-B7A0-DA8C49F93690",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -1782,7 +1791,24 @@
           "id": "B7068B26-B8EE-418C-86EC-34EB26F2C5DE"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "9BCC5757-9D13-40CD-A701-35093DBD943C",
+          "refEntity": "AFE4C4F3-7D5A-4D4A-B87A-E47A8FD2F0B6",
+          "refField": "827B263F-B3B2-4CF5-8CD4-F8FEE61E15B1",
+          "myRows": "1",
+          "refRows": "1",
+          "innerType": ""
+        },
+        {
+          "myField": "D2A3D400-1D36-448B-8F8F-8D8291BB3862",
+          "refEntity": "92CEF7A2-C1C5-4A89-809C-F57F92122113",
+          "refField": "5DA318E2-50A2-4736-AA6B-54EAD3D4953E",
+          "myRows": "n",
+          "refRows": "n",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -2153,16 +2179,7 @@
           "id": "915E611D-D8BC-41C4-B181-B174D82B2943"
         }
       ],
-      "correlations": [
-        {
-          "myField": "198C44C8-C2CA-4B95-8A2F-E12867883C3F",
-          "refEntity": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A",
-          "refField": "9D8DD9C8-4BE8-450B-BB6B-E7A843B5CD29",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": []
     },
     {
@@ -3752,16 +3769,6 @@
       "canvasData": {
         "cells": [
           {
-            "id": "2d391096-dfd8-4ff7-847c-736679a32ad5",
-            "shape": "table",
-            "position": {
-              "x": 690,
-              "y": -10
-            },
-            "count": 0,
-            "originKey": "7E18B20A-4C11-4738-9FE6-F12EE3046114"
-          },
-          {
             "id": "01efb752-ba4f-44d6-baec-fdf0cf7fba4a",
             "shape": "erdRelation",
             "source": {
@@ -3773,7 +3780,20 @@
               "port": "E1A74362-6CE0-42BB-9E33-8D2DDC1B9DFF%in"
             },
             "relation": "1:n",
-            "fillColor": "#ACDAFC"
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "af159b63-c1cc-4830-8555-9d2075f8dab6",
+            "shape": "table",
+            "position": {
+              "x": -270,
+              "y": -50
+            },
+            "count": 0,
+            "originKey": "3B9137B4-FF00-4F99-9A89-03B660EDFF5A"
           },
           {
             "id": "68dbb17a-e873-468d-b2e5-e3213c65c78a",
@@ -3787,17 +3807,10 @@
               "port": "198C44C8-C2CA-4B95-8A2F-E12867883C3F%in"
             },
             "relation": "1:n",
-            "fillColor": "#ACDAFC"
-          },
-          {
-            "id": "af159b63-c1cc-4830-8555-9d2075f8dab6",
-            "shape": "table",
-            "position": {
-              "x": -270,
-              "y": -50
-            },
-            "count": 0,
-            "originKey": "3B9137B4-FF00-4F99-9A89-03B660EDFF5A"
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
           },
           {
             "id": "c227c1ec-c5ec-4988-9241-e3cc8222e731",
@@ -3808,6 +3821,16 @@
             },
             "count": 0,
             "originKey": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A"
+          },
+          {
+            "id": "2d391096-dfd8-4ff7-847c-736679a32ad5",
+            "shape": "table",
+            "position": {
+              "x": 690,
+              "y": -10
+            },
+            "count": 0,
+            "originKey": "7E18B20A-4C11-4738-9FE6-F12EE3046114"
           }
         ]
       },
