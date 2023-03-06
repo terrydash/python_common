@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.3.0",
   "createdTime": "2023-2-22 16:59:26",
-  "updatedTime": "2023-3-6 16:04:52",
+  "updatedTime": "2023-3-6 16:10:10",
   "dbConns": [],
   "profile": {
     "default": {
@@ -4146,7 +4146,7 @@
       "id": "B3E34EEB-0255-47B8-AC6E-D11459F3E6FC"
     },
     {
-      "defKey": "ChatOps_Rel_AppChannel",
+      "defKey": "ChatOps_Rel_IM_BOT",
       "defName": "",
       "relationType": "field",
       "canvasData": {
