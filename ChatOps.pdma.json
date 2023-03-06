@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.3.0",
   "createdTime": "2023-2-22 16:59:26",
-  "updatedTime": "2023-2-22 18:14:01",
+  "updatedTime": "2023-3-6 16:04:52",
   "dbConns": [],
   "profile": {
     "default": {
@@ -1477,7 +1477,16 @@
           "id": "D9FAD35E-DE8F-4311-96A0-B0348AEAEF63"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "E1A74362-6CE0-42BB-9E33-8D2DDC1B9DFF",
+          "refEntity": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A",
+          "refField": "20D7CE17-57E2-4182-9000-197D0177EE44",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -2128,7 +2137,7 @@
           "id": "5DA318E2-50A2-4736-AA6B-54EAD3D4953E"
         },
         {
-          "defKey": "REVISION",
+          "defKey": "API_VERSION",
           "defName": "",
           "comment": "",
           "domain": "",
@@ -2258,7 +2267,7 @@
           "codeRoot": ""
         }
       },
-      "defKey": "ChatOps_Channel",
+      "defKey": "ChatOps_IM",
       "defName": "",
       "comment": "",
       "properties": {
@@ -2390,7 +2399,16 @@
           "id": "915E611D-D8BC-41C4-B181-B174D82B2943"
         }
       ],
-      "correlations": [],
+      "correlations": [
+        {
+          "myField": "198C44C8-C2CA-4B95-8A2F-E12867883C3F",
+          "refEntity": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A",
+          "refField": "D977AF6C-EBC8-45E7-8BC1-257444BB0825",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
       "indexes": []
     },
     {
@@ -2401,7 +2419,7 @@
           "codeRoot": ""
         }
       },
-      "defKey": "ChatOps_ApplicationChannel",
+      "defKey": "ChatOps_BotApplication",
       "defName": "",
       "comment": "",
       "properties": {
@@ -2533,9 +2551,9 @@
           "id": "8CA067C7-B7EE-40B0-81A8-67FB456B06D7"
         },
         {
-          "defKey": "CHANNEL_ID",
+          "defKey": "BOT_ID",
           "defName": "",
-          "comment": "ChatOps_Channel.ID",
+          "comment": "ChatOps_Bot.ID",
           "type": "INT",
           "len": "",
           "scale": "",
@@ -2550,7 +2568,7 @@
           "id": "9D8DD9C8-4BE8-450B-BB6B-E7A843B5CD29"
         },
         {
-          "defKey": "CHANNEL_CONFIG",
+          "defKey": "BOT_CONFIG",
           "defName": "",
           "comment": "",
           "type": "VARCHAR2",
@@ -2565,6 +2583,40 @@
           "extProps": {},
           "domain": "",
           "id": "922704C2-37E8-4DD1-B394-937D7898C466"
+        },
+        {
+          "defKey": "IM_CONFIG",
+          "defName": "",
+          "comment": "",
+          "type": "VARCHAR2",
+          "len": 200,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "26548964-6299-411D-A4B8-763D8DF1A96F"
+        },
+        {
+          "defKey": "IM_ID",
+          "defName": "",
+          "comment": "ChatOps_IM.ID",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "D977AF6C-EBC8-45E7-8BC1-257444BB0825"
         }
       ],
       "correlations": [],
@@ -3318,6 +3370,175 @@
       ],
       "correlations": [],
       "indexes": []
+    },
+    {
+      "id": "027AF4EE-4C22-448B-8A95-A868500B8207",
+      "env": {
+        "base": {
+          "nameSpace": "",
+          "codeRoot": ""
+        }
+      },
+      "defKey": "ChatOps_Bot",
+      "defName": "",
+      "comment": "",
+      "properties": {
+        "partitioned by": "(date string)",
+        "row format delimited": "",
+        "fields terminated by ','": "",
+        "collection items terminated by '-'": "",
+        "map keys terminated by ':'": "",
+        "store as textfile;": ""
+      },
+      "nameTemplate": "{defKey}[{defName}]",
+      "notes": {},
+      "headers": [
+        {
+          "refKey": "hideInGraph",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defKey",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "defName",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "primaryKey",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "notNull",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "autoIncrement",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "domain",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "type",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "len",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "scale",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "comment",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "refDict",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defaultValue",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "isStandard",
+          "hideInGraph": false
+        },
+        {
+          "refKey": "uiHint",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "extProps",
+          "hideInGraph": true
+        }
+      ],
+      "fields": [
+        {
+          "defKey": "ID",
+          "defName": "",
+          "comment": "",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "B704FC9D-29B6-4AF7-9E0A-EB13131DA3C3"
+        },
+        {
+          "defKey": "BOT_NAME",
+          "defName": "",
+          "comment": "",
+          "type": "VARCHAR2",
+          "len": 20,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "F8617DBF-1086-4CAD-9C82-2A942636735A"
+        },
+        {
+          "defKey": "BOT_DESC",
+          "defName": "",
+          "comment": "",
+          "type": "VARCHAR2",
+          "len": 200,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "8ADDDE21-4578-48DF-9233-1F92F492A177"
+        },
+        {
+          "defKey": "BOT_STATUS",
+          "defName": "",
+          "comment": "",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "9AC7AA34-581E-4911-8002-8DF5B85CF2E8"
+        }
+      ],
+      "correlations": [
+        {
+          "myField": "B704FC9D-29B6-4AF7-9E0A-EB13131DA3C3",
+          "refEntity": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A",
+          "refField": "9D8DD9C8-4BE8-450B-BB6B-E7A843B5CD29",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ],
+      "indexes": []
     }
   ],
   "views": [],
@@ -3931,65 +4152,44 @@
       "canvasData": {
         "cells": [
           {
-            "id": "01efb752-ba4f-44d6-baec-fdf0cf7fba4a",
-            "shape": "erdRelation",
-            "source": {
-              "cell": "c227c1ec-c5ec-4988-9241-e3cc8222e731",
-              "port": "20D7CE17-57E2-4182-9000-197D0177EE44%in"
-            },
-            "target": {
-              "cell": "af159b63-c1cc-4830-8555-9d2075f8dab6",
-              "port": "E1A74362-6CE0-42BB-9E33-8D2DDC1B9DFF%in"
-            },
-            "relation": "1:n",
-            "vertices": [
-              {
-                "x": 80,
-                "y": 36
-              }
-            ],
-            "fillColor": "#ACDAFC"
-          },
-          {
-            "id": "68dbb17a-e873-468d-b2e5-e3213c65c78a",
+            "id": "dff3f113-7f63-4359-852c-49e6d4f67e55",
             "shape": "erdRelation",
             "source": {
               "cell": "c227c1ec-c5ec-4988-9241-e3cc8222e731",
               "port": "9D8DD9C8-4BE8-450B-BB6B-E7A843B5CD29%in"
             },
             "target": {
-              "cell": "2d391096-dfd8-4ff7-847c-736679a32ad5",
-              "port": "198C44C8-C2CA-4B95-8A2F-E12867883C3F%in"
+              "cell": "77042bac-afcb-4e4b-b0ca-cb65db2437a5",
+              "port": "B704FC9D-29B6-4AF7-9E0A-EB13131DA3C3%in"
             },
             "relation": "1:n",
-            "fillColor": "#ACDAFC"
-          },
-          {
-            "id": "3466e9c9-ca9e-4f3d-a88b-1f514d64169a",
-            "shape": "erdRelation",
-            "source": {
-              "cell": "af159b63-c1cc-4830-8555-9d2075f8dab6",
-              "port": "D9FAD35E-DE8F-4311-96A0-B0348AEAEF63%in"
-            },
-            "target": {
-              "cell": "e9cbb2f8-335b-4074-a1ef-88783f4e7f52",
-              "port": "51019CF0-68EF-42E9-B55F-64F7C6384F7B%in"
-            },
-            "relation": "1:n",
+            "vertices": [
+              {
+                "x": 70,
+                "y": -48
+              }
+            ],
             "fillColor": "#ACDAFC",
             "router": {
               "name": "manhattan"
             }
           },
           {
-            "id": "c227c1ec-c5ec-4988-9241-e3cc8222e731",
-            "shape": "table",
-            "position": {
-              "x": 169,
-              "y": -27
+            "id": "2b130730-d229-4c80-8ae4-be0d6897021a",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "c227c1ec-c5ec-4988-9241-e3cc8222e731",
+              "port": "D977AF6C-EBC8-45E7-8BC1-257444BB0825%in"
             },
-            "count": 0,
-            "originKey": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A"
+            "target": {
+              "cell": "2d391096-dfd8-4ff7-847c-736679a32ad5",
+              "port": "198C44C8-C2CA-4B95-8A2F-E12867883C3F%in"
+            },
+            "relation": "1:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
           },
           {
             "id": "2d391096-dfd8-4ff7-847c-736679a32ad5",
@@ -4002,24 +4202,51 @@
             "originKey": "7E18B20A-4C11-4738-9FE6-F12EE3046114"
           },
           {
+            "id": "f0f57487-552d-4b35-a912-3713724359bb",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "c227c1ec-c5ec-4988-9241-e3cc8222e731",
+              "port": "20D7CE17-57E2-4182-9000-197D0177EE44%in"
+            },
+            "target": {
+              "cell": "af159b63-c1cc-4830-8555-9d2075f8dab6",
+              "port": "E1A74362-6CE0-42BB-9E33-8D2DDC1B9DFF%in"
+            },
+            "relation": "1:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "c227c1ec-c5ec-4988-9241-e3cc8222e731",
+            "shape": "table",
+            "position": {
+              "x": 98,
+              "y": -157
+            },
+            "count": 0,
+            "originKey": "30EC9892-8E45-4AEA-B596-2EE03B9FBD6A"
+          },
+          {
+            "id": "77042bac-afcb-4e4b-b0ca-cb65db2437a5",
+            "shape": "table",
+            "position": {
+              "x": -340,
+              "y": 167
+            },
+            "count": 0,
+            "originKey": "027AF4EE-4C22-448B-8A95-A868500B8207"
+          },
+          {
             "id": "af159b63-c1cc-4830-8555-9d2075f8dab6",
             "shape": "table",
             "position": {
-              "x": -300,
-              "y": 50
+              "x": -500,
+              "y": -70
             },
             "count": 0,
             "originKey": "3B9137B4-FF00-4F99-9A89-03B660EDFF5A"
-          },
-          {
-            "id": "e9cbb2f8-335b-4074-a1ef-88783f4e7f52",
-            "shape": "table",
-            "position": {
-              "x": -380,
-              "y": -200
-            },
-            "count": 0,
-            "originKey": "AE419CE8-43F4-453B-91EE-64AF2B793D7A"
           }
         ]
       },
