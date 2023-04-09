@@ -38,3 +38,16 @@ Thank you once again for your understanding, and I wish you and the SRE team con
 Sincerely,
 
 [Your Name]
+
+
+Dear [Manager's Name],
+
+I am writing to resign as SRE Team Leader at Citi, effective May 11, due to family reasons. I am grateful for the experiences and opportunities I have gained during my time here.
+
+However, I hope my feedback regarding the need for open communication, collaboration, and mutual support within the team will contribute to future improvements. I am committed to ensuring a smooth transition and will assist in transferring my responsibilities.
+
+Thank you for the opportunity to work at Citi, and I wish you and the team continued success.
+
+Sincerely,
+
+[Your Name]
